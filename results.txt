@@ -1,0 +1,99 @@
+=== Test 1 ===
+Type: leave request | Tone: professional and warm | Length: short (a few sentences)
+ROUGH:    hi Dhanya, I am sick and wont be coming to office today
+POLISHED: Hi Dhanya, I'm not feeling well today and won't be able to come into the office. I'll keep you updated on when I expect to be back [expected return date].
+CHANGES:  ["Corrected capitalization, punctuation, and grammar ('wont' to 'won't', 'to office' to 'into the office').", "Softened 'I am sick' to 'I'm not feeling well' for a warmer, natural tone.", 'Added a placeholder for your expected return date.']
+PLACEHOLDERS: ['expected return date']
+CHECK:    No invented dates or reasons. Placeholder for return date is fine.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 2 ===
+Type: leave request | Tone: formal | Length: full email with greeting and sign-off
+ROUGH:    need leave 14 and 15 nov, family function
+POLISHED: Subject: Leave Request: November 14 - 15
+
+Dear [Manager's Name],
+
+I am writing to request leave on November 14th and 15th due to a family commitment.
+
+Please let me know if you need any further details or coverage arrangements before then.
+
+Best regards,
+
+[Your Name]
+CHANGES:  ['Expanded the short draft into a standard formal email structure', "Improved grammar and word choice (changed 'family function' to 'family commitment')", 'Added standard email subject line, greeting, and sign-off']
+PLACEHOLDERS: ["[Manager's Name]", '[Your Name]']
+CHECK:    Dates stay exactly 14 and 15 Nov. Nothing added about being reachable.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 3 ===
+Type: status update | Tone: professional and warm | Length: short (a few sentences)
+ROUGH:    login page done, api testing pending, might delay because env was down
+POLISHED: Quick update: The login page is complete! API testing is currently pending and might be slightly delayed since the environment was down. I'll keep you updated as I move forward with testing.
+CHANGES:  ['Improved grammar, punctuation, and sentence flow.', 'Adjusted the tone to be professional, clear, and warm.', 'Clarified the cause of the potential delay.']
+PLACEHOLDERS: []
+CHECK:    Delay stays a possibility, not a promise. No new dates.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 4 ===
+Type: ask for help | Tone: professional and warm | Length: short (a few sentences)
+ROUGH:    cant solve this bug since 2 days, need ur help
+POLISHED: Hi [Name], I've been working on [this bug/issue] for the past two days and haven't been able to resolve it. Could you spare a few minutes to help me take a look? I'd really appreciate your guidance.
+CHANGES:  ["Fixed grammar ('since 2 days' to 'for the past two days').", "Expanded informal abbreviations ('cant', 'ur') into clear phrasing.", 'Adjusted tone to sound polite, warm, and professional.']
+PLACEHOLDERS: ['[Name]', '[this bug/issue]']
+CHECK:    Polite, no invented details about the bug.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 5 ===
+Type: general | Tone: formal | Length: short (a few sentences)
+ROUGH:    why was my ticket reassigned without telling me
+POLISHED: Could you please provide some context regarding why ticket [ticket number] was reassigned without prior notification? I would appreciate an update on its status.
+CHANGES:  ['Softened the tone from confrontational to professional and formal', 'Added a polite request for an update on the ticket status', 'Inserted a placeholder for the ticket identifier']
+PLACEHOLDERS: ['[ticket number]']
+CHECK:    Firm but not rude. Keep it a question.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 6 ===
+Type: general | Tone: direct and concise | Length: very short (1-2 sentences)
+ROUGH:    will be late 30 mins
+POLISHED: I will be running about 30 minutes late today.
+CHANGES:  ["Added the subject 'I' to make a complete sentence", 'Adjusted phrasing to sound more natural']
+PLACEHOLDERS: []
+CHECK:    Very short. Still says 30 minutes.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 7 ===
+Type: status update | Tone: professional and warm | Length: short (a few sentences)
+ROUGH:    i have finished the task yesterday only but forgot update the status
+POLISHED: Hi [Name], I finished [Task Name] yesterday, but forgot to update the status earlier. Apologies for the delay! [Next steps].
+CHANGES:  ["Fixed grammar and phrasing ('yesterday only', 'forgot update')", 'Adjusted tone to sound professional, warm, and natural', 'Added placeholders for missing task details and next steps']
+PLACEHOLDERS: ['[Name]', '[Task Name]', '[Next steps]']
+CHECK:    Grammar fixed. Meaning kept.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 8 ===
+Type: general | Tone: direct and concise | Length: short (a few sentences)
+ROUGH:    friday is not possible, need monday
+POLISHED: Friday won't work for me. Can we do Monday instead?
+CHANGES:  ['Fixed capitalization and grammar', 'Made the phrasing clear and professional while remaining direct']
+PLACEHOLDERS: []
+CHECK:    Direct. Does not add a reason or apology that was not there.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 9 ===
+Type: leave request | Tone: friendly and casual | Length: very short (1-2 sentences)
+ROUGH:    Hi Dhanya, aaj office nahi aa paunga, tabiyat theek nahi hai
+POLISHED: Hi Dhanya, I won't be able to make it into the office today as I'm not feeling well.
+CHANGES:  ['Translated the Hinglish text into clear English', 'Adjusted phrasing to sound natural and casual']
+PLACEHOLDERS: []
+CHECK:    Handles mixed language. Output in English. Meaning kept.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]
+
+=== Test 10 ===
+Type: leave request | Tone: professional and warm | Length: very short (1-2 sentences)
+ROUGH:    Hi Dhanya, I will be out of office today due to illness. Thank you.
+POLISHED: Hi Dhanya, I won't be able to work today as I'm feeling unwell. Thank you for understanding.
+CHANGES:  ["Softened 'due to illness' to 'feeling unwell' for a warmer, more natural tone.", "Added 'for understanding' to make the sign-off warmer."]
+PLACEHOLDERS: []
+CHECK:    Already good. Should change very little.
+SCORE (fill in): meaning kept? [ ]  nothing invented? [ ]  tone right? [ ]  sounds like me? [ ]

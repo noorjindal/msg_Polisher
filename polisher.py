@@ -24,8 +24,8 @@ load_dotenv()  # reads GEMINI_API_KEY from your .env file; must run before the c
 # Models are tried in order. If a model is "not found" or keeps failing, the next one is used.
 # Model names change over time: copy current Flash names from Google AI Studio if needed.
 MODELS = [
-    "gemini-3.7-flash",
-    "gemini-3.6-flash",
+    # "gemini-3.7-flash",
+    # "gemini-3.6-flash",
     "gemini-3.5-flash",
     "gemini-3.5-flash-lite",
 ]
