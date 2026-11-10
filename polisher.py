@@ -23,9 +23,15 @@ load_dotenv()  # reads GEMINI_API_KEY from your .env file; must run before the c
 
 # Models are tried in order. If a model is "not found" or keeps failing, the next one is used.
 # Model names change over time: copy current Flash names from Google AI Studio if needed.
-MODELS = ["gemini-3.8-flash"]
+MODELS = [
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+]
 
-MAX_RETRIES = 4            # attempts per model for temporary errors
+MAX_RETRIES = 2   # attempts per model; the next model is tried after this
+   # attempts per model for temporary errors
 TIMEOUT_SECONDS = 30       # a request that takes longer than this is cancelled and retried
 TEMPORARY_CODES = (429, 500, 503, 504)  # rate limit / overloaded / server hiccup
 
@@ -82,6 +88,7 @@ def polish(text, msg_type, tone, length):
     for model in MODELS:
         try:
             raw = _call_with_retries(model, user_prompt)
+            print(model)
             break
         except (errors.APIError, httpx.HTTPError) as error:
             last_error = error  # try the next model in the list
